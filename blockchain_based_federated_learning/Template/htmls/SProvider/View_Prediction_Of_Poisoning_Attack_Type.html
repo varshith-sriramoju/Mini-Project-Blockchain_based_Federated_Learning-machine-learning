@@ -1,0 +1,114 @@
+{% extends 'SProvider/design1.html' %}
+{% block researchblock %}
+
+
+<link rel="icon" href="images/icon.png" type="image/x-icon" />
+
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+
+
+
+		<style>
+			body {background-color:#000000;}
+			.container-fluid {padding:50px;}
+			.container{background-color:white;padding:50px;   }
+			#title{font-family: 'Fredoka One', cursive;
+}
+			.text-uppercase{
+			font-family: 'Righteous', cursive;
+
+			}
+			.tweettext{
+
+    border: 2px solid yellowgreen;
+    width: 1104px;
+    height: 442px;
+    overflow: scroll;
+    background-color:;
+}
+		.style1 {
+	color: #FF0000;
+	font-weight: bold;
+}
+.style12 {color: #FFFF00; font-weight: bold; }
+        </style>
+
+	<body>
+	<div class="container-fluid">
+		<div class="container">
+
+			<div class="row">
+				<div class="col-md-5">
+ 					<form role="form" method="POST" >
+						{% csrf_token %}
+						<fieldset>
+							<p align="center" class="text-uppercase pull-center style1">View Predicted Poisoning Attack Status Details  !!! </p>
+                            <hr>
+                            <div class="tweettext">
+                               <table width="739" border="5" align="center" bordercolor="#FF00FF">
+
+                                    <tr>
+                                       <td width="366" bgcolor="#FF0000"><div align="center" class="style12"><span class="style8 style6">Fid</span></div></td>
+<td width="366" bgcolor="#FF0000"><div align="center" class="style12"><span class="style8 style6">age</span></div></td>
+<td width="366" bgcolor="#FF0000"><div align="center" class="style12"><span class="style8 style6">anaemia</span></div></td>
+<td width="366" bgcolor="#FF0000"><div align="center" class="style12"><span class="style8 style6">creatinine_phosphokinase</span></div></td>
+<td width="366" bgcolor="#FF0000"><div align="center" class="style12"><span class="style8 style6">diabetes</span></div></td>
+<td width="366" bgcolor="#FF0000"><div align="center" class="style12"><span class="style8 style6">ejection_fraction</span></div></td>
+<td width="366" bgcolor="#FF0000"><div align="center" class="style12"><span class="style8 style6">high_blood_pressure</span></div></td>
+<td width="366" bgcolor="#FF0000"><div align="center" class="style12"><span class="style8 style6">platelets</span></div></td>
+<td width="366" bgcolor="#FF0000"><div align="center" class="style12"><span class="style8 style6">serum_creatinine</span></div></td>
+<td width="366" bgcolor="#FF0000"><div align="center" class="style12"><span class="style8 style6">serum_sodium</span></div></td>
+<td width="366" bgcolor="#FF0000"><div align="center" class="style12"><span class="style8 style6">sex</span></div></td>
+<td width="366" bgcolor="#FF0000"><div align="center" class="style12"><span class="style8 style6">smoking_history</span></div></td>
+<td width="366" bgcolor="#FF0000"><div align="center" class="style12"><span class="style8 style6">bmi</span></div></td>
+<td width="366" bgcolor="#FF0000"><div align="center" class="style12"><span class="style8 style6">HbA1c_level</span></div></td>
+<td width="366" bgcolor="#FF0000"><div align="center" class="style12"><span class="style8 style6">blood_glucose_level</span></div></td>
+<td width="366" bgcolor="#FF0000"><div align="center" class="style12"><span class="style8 style6">blockchain_code_sha</span></div></td>
+<td width="366" bgcolor="#FF0000"><div align="center" class="style12"><span class="style8 style6">Prediction</span></div></td>
+
+
+
+                      </tr>
+                            {% for object in list_objects %}
+                      <tr>
+
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="left">{{object.Fid}}</div></td>
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="left">{{object.age}}</div></td>
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="left">{{object.anaemia}}</div></td>
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="left">{{object.creatinine_phosphokinase}}</div></td>
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="left">{{object.diabetes}}</div></td>
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="left">{{object.ejection_fraction}}</div></td>
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="left">{{object.high_blood_pressure}}</div></td>
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="left">{{object.platelets}}</div></td>
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="left">{{object.serum_creatinine}}</div></td>
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="left">{{object.serum_sodium}}</div></td>
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="left">{{object.sex}}</div></td>
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="left">{{object.smoking_history}}</div></td>
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="left">{{object.bmi}}</div></td>
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="left">{{object.HbA1c_level}}</div></td>
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="left">{{object.blood_glucose_level}}</div></td>
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="left">{{object.blockchain_code_sha}}</div></td>
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="left">{{object.Prediction}}</div></td>
+
+
+                        </tr>
+
+                                        {% endfor %}
+                      </table>
+
+                            </div>
+
+						</fieldset>
+					</form>
+				</div>
+
+				<div class="col-md-2">
+					<!-------null------>
+				</div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+    <tr>
