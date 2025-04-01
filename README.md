@@ -1,3 +1,4 @@
+Demo Video : https://drive.google.com/file/d/1ZMsg2GVZ3MS_rwmq9sa4OThcUQU0QH06/view?usp=sharing
 This project is a college mini-project aimed at enhancing the security and privacy of Federated Learning (FL) systems. By integrating Blockchain technology and Secure Multi-Party Computation (SMPC),
 the system ensures secure data aggregation and robust model verification, protecting against poisoning attacks while preserving data privacy.
 
