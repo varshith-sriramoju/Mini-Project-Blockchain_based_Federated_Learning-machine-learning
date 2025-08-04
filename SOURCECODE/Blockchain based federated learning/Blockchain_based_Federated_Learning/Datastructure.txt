@@ -1,0 +1,45 @@
+Blockchain based Federated Learning with SMPC Model Verification Against Poisoning Attack for Healthcare Systems
+
+
+
+Federated Learning, Secure Multi-Party Computation,Blockchain, Poisoning Attack, Encrypted Inference,
+Healthcare Systems
+
+
+
+IEEE Transactions on Emerging Topics in Computing,Issue Date:21.April.2023
+
+
+Blockchain_based_Federated_Learning
+
+
+
+blockchain_based_federated_learning
+
+
+
+
+
+predict_poisoning_attack
+
+
+Fid	
+age	
+anaemia	
+creatinine_phosphokinase	
+diabetes	
+ejection_fraction	
+high_blood_pressure	
+platelets	
+serum_creatinine	
+serum_sodium	
+sex	
+smoking_history	
+bmi	
+HbA1c_level	
+blood_glucose_level	
+blockchain_code_sha
+Prediction
+
+
+
